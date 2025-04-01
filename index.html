@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="nouveau.css">
+    <title>Programmation C</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        canvas { border: 1px solid black; margin: 20px 0; }
+        .controls { margin-top: 10px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Programmation C</h2>
+    <!-- Zone d'affichage du PDF -->
+    <canvas id="pdfCanvas"></canvas>
+
+    <!-- Contrôles de navigation et de zoom -->
+    <div class="controls">
+        <button onclick="prevPage()"><h2 class="max"><span>Page précédente<span></h2></button>
+        <span>Page <span id="pageNum">1</span> / <span id="pageCount">?</span></span>
+        <button onclick="nextPage()"><h2 class="max"><span>Page suivante</span></h2></button>
+        <button onclick="zoomIn()"><h2 class="max"><span>🔍 Zoom +</span></h2></button>
+        <button onclick="zoomOut()"><h2 class="max"><span>🔍 Zoom -</span></h2></button>
+    </div>
+   
+        
+           
+   <section>
+       <div class="avis">
+       <p>Épreuves Pc</p>
+       </div>
+       <div class="avis">
+       <h2 >Séquence 1</h2>
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 2</h2>
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">          
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 3</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 4</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 5</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 6</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                     <section class="apropos" id="apropos">
+       <div class="avis">
+       <p>Correction des Épreuves Pc</p>
+       </div>
+       <div class="avis">
+       <h2 >Correction Séquence 1</h2>
+       </div>
+       <div class="row">
+            <div class="col50">
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 2</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">          
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 3</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 4</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 5</h2>
+                    </div>
+                   <div class="row">
+            <div class="col50"> 
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 6</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <h2>Programmation C</h2>
+    <!-- Zone d'affichage du PDF -->
+    <canvas id="pdfCanvas"></canvas>
+
+    <!-- Contrôles de navigation et de zoom -->
+    <div class="controls">
+        <button onclick="prevPage()"><h2 class="max"><span>Page précédente<span></h2></button>
+        <span>Page <span id="pageNum">1</span> / <span id="pageCount">?</span></span>
+        <button onclick="nextPage()"><h2 class="max"><span>Page suivante</span></h2></button>
+        <button onclick="zoomIn()"><h2 class="max"><span>🔍 Zoom +</span></h2></button>
+        <button onclick="zoomOut()"><h2 class="max"><span>🔍 Zoom -</span></h2></button>
+    </div>
+                   <section>
+       <div class="avis">
+       <p>Épreuves PD</p>
+       </div>
+       <div class="avis">
+       <h2 >Séquence 1</h2>
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 2</h2>
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">          
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 3</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 4</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 5</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                    <section>
+                    <div class="avis">
+                    <h2>Séquence 6</h2>
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </section> 
+                     <section class="apropos" id="apropos">
+       <div class="avis">
+       <p>Correction des Épreuves PD</p>
+       </div>
+       <div class="avis">
+       <h2 >Correction Séquence 1</h2>
+       </div>
+       <div class="row">
+            <div class="col50">
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 2</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img" src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">          
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 3</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 4</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 5</h2>
+                    </div>
+                   <div class="row">
+            <div class="col50"> 
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <section class="apropos" id="apropos">
+                    <div class="avis">
+                    <h2>Correction Séquence 6</h2>
+                    </div>
+                    <div class="row">
+            <div class="col50">
+    <img class="img"src="rett/phy1.png" alt="image">                   
+                    <img src="rett/phy2.png" alt="image">                 
+                    <img src="rett/images.jpg" alt="image">                   
+                    <img src="rett/phy1.png" alt="image">                   
+                    <img /src="rett/phy2.png" alt="image">  
+                    </div>
+                    </div>
+                    </section> 
+                    <script>
+        // URL du fichier PDF à afficher
+        const url = 'rett/pdf.pdf'; // Remplacez par le chemin réel de votre fichier PDF
+
+        let pdfDoc = null,
+            pageNum = 1,
+            scale = 1.5,
+            canvas = document.getElementById('pdfCanvas'),
+            ctx = canvas.getContext('2d');
+
+        // Chargement du document PDF
+        pdfjsLib.getDocument(url).promise.then(pdf => {
+            pdfDoc = pdf;
+            document.getElementById('pageCount').textContent = pdf.numPages;
+            renderPage(pageNum);
+        }).catch(error => {
+            console.error('Erreur lors du chargement du PDF :', error);
+        });
+
+        // Fonction pour afficher une page spécifique
+        function renderPage(num) {
+            pdfDoc.getPage(num).then(page => {
+                let viewport = page.getViewport({ scale: scale });
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                let renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+                document.getElementById('pageNum').textContent = num;
+            });
+        }
+
+        // Fonction pour passer à la page précédente
+        function prevPage() {
+            if (pageNum > 1) {
+                pageNum--;
+                renderPage(pageNum);
+            }
+        }
+
+        // Fonction pour passer à la page suivante
+        function nextPage() {
+            if (pdfDoc && pageNum < pdfDoc.numPages) {
+                pageNum++;
+                renderPage(pageNum);
+            }
+        }
+
+        // Fonction pour zoomer
+        function zoomIn() {
+            scale += 0.2;
+            renderPage(pageNum);
+        }
+
+        // Fonction pour dézoomer
+        function zoomOut() {
+            if (scale > 0.5) {
+                scale -= 0.2;
+                renderPage(pageNum);
+            }
+        }
+    </script>   
+</body>
+</html>
+
